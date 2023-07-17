@@ -45,7 +45,7 @@ class StayInPipelineStages implements JsonSerializable
     /**
      * Encode this object to JSON
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $json = array();
         $json['times_in_stages'] = $this->timesInStages;

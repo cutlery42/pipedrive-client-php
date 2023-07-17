@@ -52,7 +52,7 @@ class AdditionalData implements JsonSerializable
     /**
      * Encode this object to JSON
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $json = array();
         $json['start']                    = $this->start;

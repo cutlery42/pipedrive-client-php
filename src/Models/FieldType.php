@@ -49,7 +49,7 @@ class FieldType implements JsonSerializable
     /**
      * Encode this object to JSON
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $json = array();
         $json['field_type'] = $this->fieldType;

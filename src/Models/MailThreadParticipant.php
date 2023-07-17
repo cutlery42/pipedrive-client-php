@@ -106,7 +106,7 @@ class MailThreadParticipant implements JsonSerializable
     /**
      * Encode this object to JSON
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $json = array();
         $json['id']                     = $this->id;

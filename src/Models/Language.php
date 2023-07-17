@@ -45,7 +45,7 @@ class Language implements JsonSerializable
     /**
      * Encode this object to JSON
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $json = array();
         $json['language_code'] = $this->languageCode;
